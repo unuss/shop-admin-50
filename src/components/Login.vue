@@ -56,8 +56,9 @@ export default {
         }).then(res => {
           console.log(res.data)
           // const meta = res.data.meta
-          const { meta } = res.data
+          const { meta, data } = res.data
           if (meta.status === 200) {
+            localStorage.setItem('token', data.token)
             console.log(meta.msg)
             this.$message({
               message: '登陆成功',
