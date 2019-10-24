@@ -7,8 +7,8 @@
       <el-form-item label="用户名:"  prop='username'>
         <el-input placeholder="请输入用户名" v-model="form.username"></el-input>
       </el-form-item >
-      <el-form-item type='password' placeholder='请输入密码' label="密码:" prop='password'>
-        <el-input v-model="form.password"></el-input>
+      <el-form-item  label="密码:" prop='password'>
+        <el-input v-model="form.password" type='password' placeholder='请输入密码'></el-input>
       </el-form-item>
       <el-form-item>
         <el-button class='btn' type="primary" @click='login'>登录</el-button>
@@ -78,7 +78,7 @@ export default {
 }
 </script>
 
-<style>
+<style  lang="less">
 *{
   margin: 0;
   padding: 0;
